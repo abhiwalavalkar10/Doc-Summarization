@@ -1,0 +1,87 @@
+{
+  "builder_name": "csv",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "csv",
+  "dataset_size": 10746796,
+  "description": "",
+  "download_checksums": {
+    "C:/Users/Gauri/Downloads/Abhishek/Doc-Summarization/DocSummarizer/artifacts/data_ingestion/train.csv": {
+      "num_bytes": 9419888,
+      "checksum": null
+    },
+    "C:/Users/Gauri/Downloads/Abhishek/Doc-Summarization/DocSummarizer/artifacts/data_ingestion/test.csv": {
+      "num_bytes": 531074,
+      "checksum": null
+    },
+    "C:/Users/Gauri/Downloads/Abhishek/Doc-Summarization/DocSummarizer/artifacts/data_ingestion/validation.csv": {
+      "num_bytes": 513124,
+      "checksum": null
+    }
+  },
+  "download_size": 10464086,
+  "features": {
+    "id": {
+      "dtype": "large_string",
+      "_type": "Value"
+    },
+    "dialogue": {
+      "dtype": "large_string",
+      "_type": "Value"
+    },
+    "summary": {
+      "dtype": "large_string",
+      "_type": "Value"
+    },
+    "input_ids": {
+      "feature": {
+        "dtype": "int32",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "attention_mask": {
+      "feature": {
+        "dtype": "int8",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "labels": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "List"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 21210882,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 9674351,
+      "num_examples": 14731,
+      "dataset_name": "csv"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 545217,
+      "num_examples": 819,
+      "dataset_name": "csv"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 527228,
+      "num_examples": 818,
+      "dataset_name": "csv"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

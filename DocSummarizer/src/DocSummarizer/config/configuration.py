@@ -1,6 +1,6 @@
 from DocSummarizer.constants import *
 from DocSummarizer.utils.common import read_yaml, create_directories
-from DocSummarizer.entity import DataIngestionConfig, DataValidationConfig
+from DocSummarizer.entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig
 import os
 import logging
 
@@ -49,3 +49,17 @@ class ConfigurationManager:
             ALL_REQUIRED_FILES = config.ALL_REQUIRED_FILES
         )
         return data_validation_config
+
+    
+    def get_data_transformation_config(self) -> DataTransformationConfig:
+        config = self.config.data_transformation
+
+        create_directories_cust([str(config.raw_data_dir)])
+        
+        data_transformation_config = DataTransformationConfig(
+            raw_data_dir = Path(config.raw_data_dir),
+            data_path = Path(config.data_path),
+            transformed_data_dir = Path(config.transformed_data_dir),
+            tokenizer_name = config.tokenizer_name
+        )
+        return data_transformation_config
