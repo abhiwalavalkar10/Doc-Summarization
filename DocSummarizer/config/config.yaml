@@ -4,3 +4,8 @@ data_ingestion:
   source_URL: https://github.com/abhiwalavalkar10/Doc-Summarization/raw/refs/heads/main/DocSummarizer/data/samsum_data.zip
   local_data_file: artifacts/data_ingestion/samsum_data.zip
   unzip_dir: artifacts/data_ingestion
+
+data_validation:
+  raw_data_dir: artifacts/data_validation
+  STATUS_FILE: artifacts/data_validation/status.txt
+  ALL_REQUIRED_FILES: ["train", "test", "val"] 
