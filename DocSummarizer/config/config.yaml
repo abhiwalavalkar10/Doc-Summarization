@@ -1,0 +1,6 @@
+artifacts_root: artifacts
+data_ingestion:
+  raw_data_dir: artifacts/data_ingestion
+  source_URL: https://github.com/abhiwalavalkar10/Doc-Summarization/raw/refs/heads/main/DocSummarizer/data/samsum_data.zip
+  local_data_file: artifacts/data_ingestion/samsum_data.zip
+  unzip_dir: artifacts/data_ingestion
